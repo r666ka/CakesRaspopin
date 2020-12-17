@@ -1,0 +1,69 @@
+﻿<Window x:Class="Tortiki.MenedzherPoZakypkam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortiki"
+        mc:Ignorable="d"
+        Title="Менеджер по закупкам" Height="450" Width="800"
+           WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="#FF8F1A2A">
+
+            <Image
+            Source="Resources/Logo_Monochrome.png" 
+            Margin="10,10,696,327">
+            </Image>
+
+            <TextBlock
+            FontFamily="Comic Sans MS"
+            FontSize="12" 
+            Margin="682,347,0,0"
+            TextAlignment="Center">
+          <Run
+            FontSize="30"
+            Foreground="White"
+            FontWeight="Bold">
+            Cakes 
+          </Run>           
+           
+            <LineBreak/>
+            Entertainment
+
+            </TextBlock>
+
+            <DataGrid
+            Margin="118,23,10,72"
+            x:Name="MenedzherPoZakypkamTable"
+            AutoGenerateColumns="True"
+            Background="#FFE1DDD7">
+            </DataGrid>
+
+            <TextBlock 
+            Margin="10,387,583,10"
+            FontFamily="Comic Sans MS"
+            FontSize="12"
+            Foreground="White">
+            Менеджер по закупкам
+            </TextBlock>
+
+            <Button 
+            Margin="255,362,420,20"
+            x:Name="MenedzherPoZakypkamButton"
+            Content="Поставщики"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="MenedzherPoZakypkamButton_Click">
+            </Button>
+
+        <Button 
+            Margin="494,362,181,20"
+            x:Name="MenedzherPoZakypkamBack"
+            Content="Назад"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="MenedzherPoZakypkamBack_Click" >
+        </Button>
+
+    </Grid>
+</Window>

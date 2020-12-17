@@ -1,0 +1,62 @@
+﻿<Window x:Class="Tortiki.DeleteArtikul"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortiki"
+        mc:Ignorable="d"
+        Title="DeleteArtikul" Height="825" Width="797"
+         WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="#FF8F1A2A">
+
+        <Image
+            Source="Resources/Logo_Monochrome.png" 
+            Margin="314,618,297,10">
+        </Image>
+
+        <TextBlock
+            FontFamily="Comic Sans MS"
+            FontSize="32" 
+            Margin="262,64,251,585"
+            TextAlignment="Center">
+          <Run
+            FontSize="70"
+            Foreground="White"
+            FontWeight="Bold">
+            Cakes 
+          </Run>           
+           
+            <LineBreak/>
+            Entertainment
+
+        </TextBlock>
+
+        <TextBox 
+            Margin="143,345,109,415"
+            x:Name="DelteArt"
+            FontFamily="Comic Sans MS"
+            Text="Введите артикул"
+            FontSize="20">
+        </TextBox>
+
+        <Button 
+            Margin="314,448,299,310"
+            x:Name="Deleteart"
+            Content="Удалить"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            Background="#FFFFD77F" Click="DelteArtikul">
+        </Button>
+
+        <Button 
+            Margin="314,541,299,217"
+            x:Name="BackAdminPanel"
+            Content="Назад"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            Background="#FFFFD77F" Click="BackAdminPanel_Click" >
+        </Button>
+
+    </Grid>
+</Window>

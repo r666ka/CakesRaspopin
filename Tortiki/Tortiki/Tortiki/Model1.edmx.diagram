@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e75f469f44024e1d914f15978f3728cf" Name="Diagram1">
+        <EntityTypeShape EntityType="CakesModel.Ingrediyent" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Izdeliye" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Oborudovaniye" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Polzovateli" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Postavishchik" Width="1.5" PointX="1.5" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Spetsifikatsiya_ingrediyenty" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Spetsifikatsiya_operatsii" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Spetsifikatsiya_polufabrikaty" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Spetsifikatsiya_ukrasheniya_dlya_torta" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Tip_Oborudovaniye" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Ukrasheniye_dlya_torta" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CakesModel.Zakaz" Width="1.5" PointX="6" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="CakesModel.FK_Ингредиенты_Поставщик" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_ингредиенты_Ингредиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Заказ_Изделие" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_ингредиенты_Изделие" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_операции_Изделие" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_полуфабрикат_Изделие" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_полуфабрикат_Изделие1" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_украшения_для_торта_Изделие" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Оборудование_Тип_оборудования" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Заказ_Пользователи" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Украшения_для_торта_Поставщик" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_операции_Тип_оборудования" ManuallyRouted="false" />
+        <AssociationConnector Association="CakesModel.FK_Спецификация_украшения_для_торта_Украшения_для_торта" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CakesModel.Instrumenty" Width="1.5" PointX="8.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

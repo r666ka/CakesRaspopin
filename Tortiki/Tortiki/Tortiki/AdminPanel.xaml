@@ -1,0 +1,105 @@
+﻿<Window x:Class="Tortiki.AdminPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortiki"
+        mc:Ignorable="d"
+        Title="AdminPanel" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="#FF8F1A2A">
+        
+        <Image
+            Source="Resources/Logo_Monochrome.png" 
+            Margin="10,10,696,327">
+        </Image>
+
+        <TextBlock
+            FontFamily="Comic Sans MS"
+            FontSize="12" 
+            Margin="682,347,0,0"
+            TextAlignment="Center">
+          <Run
+            FontSize="30"
+            Foreground="White"
+            FontWeight="Bold">
+            Cakes 
+          </Run>           
+           
+            <LineBreak/>
+            Entertainment
+
+        </TextBlock>
+
+        <DataGrid
+            Margin="118,23,10,72"
+            x:Name="AdminTable"
+            AutoGenerateColumns="True"
+            Background="#FFE1DDD7" SelectionChanged="AdminTable_SelectionChanged">
+        </DataGrid>
+
+        <Button 
+            Margin="10,168,696,214"
+            x:Name="button_dobadit"
+            Content="Добавить"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="button_dobadit_Click">
+        </Button>
+
+        <Button 
+            Margin="10,235,696,148"
+            x:Name="delete"
+            Content="Удалить"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="delete_Click">
+        </Button>
+
+        <TextBlock 
+            Margin="10,387,686,10"
+            FontFamily="Comic Sans MS"
+            FontSize="12"
+            Foreground="White">
+            Директор
+        </TextBlock>
+
+        <Button 
+            Margin="197,362,478,20"
+            x:Name="Obnovit"
+            Content="Инструменты"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="Obnovit_Click">
+        </Button>
+
+        <Button 
+            Margin="356,362,319,20"
+            x:Name="Ingradieti"
+            Content="Ингредиенты"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="Ingradieti_Click">
+        </Button>
+
+        <Button 
+            Margin="507,362,168,20"
+            x:Name="ykrasheniy"
+            Content="Украшения"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="ykrasheniy_Click">
+        </Button>
+
+        <Button 
+            Margin="10,298,695.6,84"
+            x:Name="back_register"
+            Content="Назад"
+            FontFamily="Comic Sans MS"
+            FontSize="15"
+            Background="#FFFFD77F" Click="back_register_Click">
+        </Button>
+
+    </Grid>
+</Window>
